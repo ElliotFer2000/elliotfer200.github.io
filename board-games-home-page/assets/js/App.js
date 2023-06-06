@@ -10090,12 +10090,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.footerObserver = void 0;
-function testViewportForFooter(entries, observer) {
-  if (bottomNav.offsetWidth !== 0) {
-    entries[0].isIntersecting ? bottomNav.classList.toggle("nav__invisible") : bottomNav.classList.toggle("nav__invisible");
-  }
-}
-var footerObserver = new IntersectionObserver(testViewportForFooter);
 exports.footerObserver = footerObserver;
 },{}],"App.js":[function(require,module,exports) {
 "use strict";
