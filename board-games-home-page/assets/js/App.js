@@ -10092,7 +10092,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.footerObserver = void 0;
 function testViewportForFooter(entries, observer) {
   if (bottomNav.offsetWidth !== 0) {
-    entries[0].isIntersecting ? bottomNav.classList.add("nav__invisible") : bottomNav.classList.remove("nav__invisible");
+    entries[0].isIntersecting ? bottomNav.classList.toggle("nav__invisible") : bottomNav.classList.toggle("nav__invisible");
   }
 }
 var footerObserver = new IntersectionObserver(testViewportForFooter);
